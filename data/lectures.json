@@ -1,0 +1,158 @@
+{
+  "CS F363": [
+    {
+      "id": 1,
+      "title": "Introduction to Compiler Design",
+      "date": "Feb 12, 2025",
+      "dateObj": "2025-02-12",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f363-1"
+    },
+    {
+      "id": 2,
+      "title": "Lexical Analysis",
+      "date": "Feb 15, 2025",
+      "dateObj": "2025-02-15",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f363-2"
+    },
+    {
+      "id": 3,
+      "title": "Syntax Analysis",
+      "date": "Feb 17, 2025",
+      "dateObj": "2025-02-17",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f363-3"
+    }
+  ],
+  "CS F364": [
+    {
+      "id": 1,
+      "title": "Introduction to Algorithm Analysis",
+      "date": "Feb 10, 2025",
+      "dateObj": "2025-02-10",
+      "instructor": "Aneesh Sreevallabh Chivukula",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f364-1"
+    },
+    {
+      "id": 2,
+      "title": "Divide and Conquer",
+      "date": "Feb 14, 2025",
+      "dateObj": "2025-02-14",
+      "instructor": "Aneesh Sreevallabh Chivukula",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f364-2"
+    },
+    {
+      "id": 3,
+      "title": "Dynamic Programming",
+      "date": "Feb 18, 2025",
+      "dateObj": "2025-02-18",
+      "instructor": "Aneesh Sreevallabh Chivukula",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f364-3"
+    }
+  ],
+  "BITS F464": [
+    {
+      "id": 1,
+      "title": "Introduction to Machine Learning",
+      "date": "Feb 11, 2025",
+      "dateObj": "2025-02-11",
+      "instructor": "Nikumani Choudhury",
+      "onedriveLink": "https://onedrive.live.com/lecture-bits-f464-1"
+    },
+    {
+      "id": 2,
+      "title": "Linear Regression",
+      "date": "Feb 13, 2025",
+      "dateObj": "2025-02-13",
+      "instructor": "Nikumani Choudhury",
+      "onedriveLink": "https://onedrive.live.com/lecture-bits-f464-2"
+    },
+    {
+      "id": 3,
+      "title": "Logistic Regression",
+      "date": "Feb 16, 2025",
+      "dateObj": "2025-02-16",
+      "instructor": "Nikumani Choudhury",
+      "onedriveLink": "https://onedrive.live.com/lecture-bits-f464-3"
+    }
+  ],
+  "ECON F354": [
+    {
+      "id": 1,
+      "title": "Introduction to Derivatives",
+      "date": "Feb 12, 2025",
+      "dateObj": "2025-02-12",
+      "instructor": "Apurba Das",
+      "onedriveLink": "https://onedrive.live.com/lecture-econ-f354-1"
+    },
+    {
+      "id": 2,
+      "title": "Options and Futures",
+      "date": "Feb 15, 2025",
+      "dateObj": "2025-02-15",
+      "instructor": "Apurba Das",
+      "onedriveLink": "https://onedrive.live.com/lecture-econ-f354-2"
+    },
+    {
+      "id": 3,
+      "title": "Risk Management Strategies",
+      "date": "Feb 19, 2025",
+      "dateObj": "2025-02-19",
+      "instructor": "Apurba Das",
+      "onedriveLink": "https://onedrive.live.com/lecture-econ-f354-3" 
+    }
+  ],
+  "CS F303": [
+    {
+      "id": 1,
+      "title": "Introduction to Computer Networks",
+      "date": "Feb 9, 2025",
+      "dateObj": "2025-02-09",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-1"
+    },
+    {
+      "id": 2,
+      "title": "Network Layers and Protocols",
+      "date": "Feb 13, 2025",
+      "dateObj": "2025-02-13",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-2"
+    },
+    {
+      "id": 3,
+      "title": "Routing Algorithms",
+      "date": "Feb 17, 2025",
+      "dateObj": "2025-02-17",
+      "instructor": "Dr. Tathagat Ray",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-3"
+    }
+  ],
+  "CS F241": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "date": "Feb 12, 2025",
+      "dateObj": "2025-02-12",
+      "instructor": "Dr. CKV",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQDGGRXZg5RAgyW7aFxMnvAB9sSQNBzSvfxBg5X0ts5nHw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p4Spyh"
+    },
+    {
+      "id": 2,
+      "title": "8086 Processor",
+      "date": "Feb 15, 2025",
+      "dateObj": "2025-02-15",
+      "instructor": "Dr. CKV",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EY8vl_Uz4cdFqn6Y9ykcrbMB_2OIOdV9_UFj2pLkanPRPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BeiWNy"
+    },
+    {
+      "id": 3,
+      "title": "BUS Interface",
+      "date": "Feb 17, 2025",
+      "dateObj": "2025-02-17",
+      "instructor": "Dr. CKV",
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f241-3"
+    }
+  ]
+}

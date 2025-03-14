@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPartus | Course Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <main class="main-content">
+            <header class="main-header">
+                <div class="logo-container">
+                    <div class="temp-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                
+                <div class="brand">
+                    <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span><sup>β</sup></h1>
+                </div>
+                
+                <div class="profile-container">
+                    <div class="action-buttons">
+                        <div class="search-container">
+                            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="search-bar" id="searchBar">
+                                <input type="text" placeholder="Search for any course...">
+                                <button class="search-close" id="searchClose" aria-label="Close search">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <button aria-label="Search courses">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <button class="profile-button" id="profileButton">
+                            <i class="fas fa-user-circle"></i>
+                        </button>
+                        <div class="profile-menu" id="profileMenu">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="courses-grid">
+                <!-- Course tiles will be dynamically added here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
