@@ -23,6 +23,51 @@
     letter-spacing: 0.5px;
 }
 
+/* Main header structure - UPDATED */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Left section containing logo and brand - NEW */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo container - UPDATED */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Brand container - UPDATED */
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+/* Profile container - UPDATED */
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 /* Back Button */
 .back-button {
     width: 45px;
