@@ -1,79 +1,59 @@
 /* Course Detail Page Styles */
 
-/* Replace these styles in your course-detail.css file */
-
-/* Main header structure */
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-    position: relative;
-}
-
-/* Left section containing logo and brand */
-.left-section {
-    display: flex;
-    align-items: center;
-    z-index: 5; /* Ensure it stays above other elements */
-}
-
-/* Logo container */
-.logo-container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-/* Temporary logo */
-.temp-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
+/* Course Header Section */
+.course-header {
     background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
-    border-radius: 50%;
     color: white;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(142, 36, 101, 0.3);
 }
 
-.temp-logo i {
-    font-size: 20px;
+.course-info h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 10px;
 }
 
-/* Brand styling */
-.brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    position: relative; /* Changed from absolute */
-}
-
-.brand h1 {
-    margin: 0;
-    font-size: 1.5rem;
+.course-info h1 {
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
-.brand-main {
-    color: #333333;
+/* Main header structure - UPDATED */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.brand-secondary {
-    color: #8e2465;
+/* Left section containing logo and brand - NEW */
+.left-section {
+    display: flex;
+    align-items: center;
 }
 
-/* Hover effects */
-.logo-container:hover .temp-logo {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(142, 36, 101, 0.4);
+/* Logo container - UPDATED */
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
-.brand:hover h1 {
-    opacity: 0.9;
+/* Brand container - UPDATED */
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand h1 {
+    margin: 0;
 }
 
 /* Profile container - UPDATED */

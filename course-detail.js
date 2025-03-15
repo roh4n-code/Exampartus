@@ -396,28 +396,3 @@ document.addEventListener('DOMContentLoaded', function() {
     setupExpandableSearch();
     setupProfileMenu();
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the logo and brand links
-    const logoLink = document.querySelector('.logo-container');
-    const brandLink = document.querySelector('.brand');
-    
-    // Add click event listeners
-    logoLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = 'homepage.html';
-    });
-    
-    brandLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.location.href = 'homepage.html';
-    });
-    
-    // Add back button functionality
-    const backButton = document.getElementById('backButton');
-    if (backButton) {
-        backButton.addEventListener('click', function() {
-            window.history.back();
-        });
-    }
-});
