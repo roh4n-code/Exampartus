@@ -314,12 +314,36 @@ function attachLectureClickListeners() {
     });
 }
 
+// Add this updated function to course-detail.js
+
 // Profile Menu Functionality
 function setupProfileMenu() {
     const profileButton = document.getElementById('profileButton');
     const profileMenu = document.getElementById('profileMenu');
+    const logoutButton = document.getElementById('logoutButton');
+    const profileAvatar = document.getElementById('profileAvatar');
+    const profileName = document.getElementById('profileName');
+    const profileEmail = document.getElementById('profileEmail');
+    
+    // Load user data from localStorage
+    function loadUserData() {
+        const userData = JSON.parse(localStorage.getItem('user'));
+        if (userData) {
+            // Update profile information
+            if (profileName) profileName.textContent = userData.name || 'User Name';
+            if (profileEmail) profileEmail.textContent = userData.email || 'user@example.com';
+            
+            // Update avatar if available
+            if (userData.picture && profileAvatar) {
+                profileAvatar.src = userData.picture;
+            }
+        }
+    }
     
     if (profileButton && profileMenu) {
+        // Load user data when page loads
+        loadUserData();
+        
         // Toggle menu on button click
         profileButton.addEventListener('click', function(event) {
             event.stopPropagation();
@@ -333,14 +357,35 @@ function setupProfileMenu() {
             }
         });
         
-        // Handle menu item clicks
-        profileMenu.querySelectorAll('a').forEach(item => {
-            item.addEventListener('click', function(event) {
+        // Handle logout
+        if (logoutButton) {
+            logoutButton.addEventListener('click', function(event) {
                 event.preventDefault();
-                console.log(`Clicked: ${this.textContent.trim()}`);
-                profileMenu.classList.remove('active');
+                
+                // Set logout flag
+                localStorage.setItem('logging_out', 'true');
+                
+                // Clear localStorage
+                localStorage.removeItem('user');
+                
+                // If using Firebase Auth, sign out
+                if (window.firebase && firebase.auth) {
+                    firebase.auth().signOut()
+                        .then(() => {
+                            console.log('User signed out');
+                            window.location.href = 'index.html';
+                        })
+                        .catch((error) => {
+                            console.error('Error signing out:', error);
+                            // Clear logout flag in case of error
+                            localStorage.removeItem('logging_out');
+                        });
+                } else {
+                    // Redirect to login page
+                    window.location.href = 'index.html';
+                }
             });
-        });
+        }
     }
 }
 

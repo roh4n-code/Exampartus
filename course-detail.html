@@ -22,40 +22,50 @@
                     <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
                 </a>
                 
-                <div class="profile-container">
-                    <div class="action-buttons">
-                        <button class="back-button" id="backButton" aria-label="Go back">
-                            <i class="fas fa-arrow-left"></i>
+            <!-- Replace this section in the profile-container div in course-detail.html -->
+            <div class="profile-container">
+                <div class="action-buttons">
+                    <button class="back-button" id="backButton" aria-label="Go back">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div class="search-container">
+                        <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                            <i class="fas fa-search"></i>
                         </button>
-                        <div class="search-container">
-                            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                        <div class="search-bar" id="searchBar">
+                            <input type="text" placeholder="Search for any lecture...">
+                            <button class="search-close" id="searchClose" aria-label="Close search">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <button aria-label="Search lectures">
                                 <i class="fas fa-search"></i>
                             </button>
-                            <div class="search-bar" id="searchBar">
-                                <input type="text" placeholder="Search for any lecture...">
-                                <button class="search-close" id="searchClose" aria-label="Close search">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                                <button aria-label="Search lectures">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
                         </div>
-                        
+                    </div>
+                    
+                    <div class="profile-wrapper">
                         <button class="profile-button" id="profileButton">
-                            <i class="fas fa-user-circle"></i>
+                            <div class="profile-avatar">
+                                <img id="profileAvatar" src="/api/placeholder/32/32" alt="Profile">
+                            </div>
                         </button>
                         <div class="profile-menu" id="profileMenu">
+                            <div class="profile-header">
+                                <div class="profile-info">
+                                    <h4 id="profileName">User Name</h4>
+                                    <p id="profileEmail">user@example.com</p>
+                                </div>
+                            </div>
                             <ul>
-                                <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
                                 <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
                                 <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                <li><a href="#" class="logout" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div>
             </header>
 
             <section class="course-header">

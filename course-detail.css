@@ -378,3 +378,73 @@
     border-color: #8e2465;
     box-shadow: 0 0 0 3px rgba(142, 36, 101, 0.2);
 }
+/* Add these styles to course-detail.css if they're not already there */
+
+/* Profile Wrapper */
+.profile-wrapper {
+    position: relative;
+}
+
+/* Profile Button with Avatar */
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #8e2465;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Menu Header */
+.profile-header {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    color: white;
+}
+
+.profile-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Ensure the profile menu animation is included */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 260px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    display: none;
+    overflow: hidden;
+    animation: fadeInDown 0.3s ease-out;
+}
+
+.profile-menu.active {
+    display: block;
+}
