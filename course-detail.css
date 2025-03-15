@@ -1,59 +1,79 @@
 /* Course Detail Page Styles */
 
-/* Course Header Section */
-.course-header {
-    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
-    color: white;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 12px rgba(142, 36, 101, 0.3);
-}
+/* Replace these styles in your course-detail.css file */
 
-.course-info h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    opacity: 0.9;
-    margin-bottom: 10px;
-}
-
-.course-info h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-/* Main header structure - UPDATED */
+/* Main header structure */
 .main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 15px 20px;
+    position: relative;
 }
 
-/* Left section containing logo and brand - NEW */
+/* Left section containing logo and brand */
 .left-section {
     display: flex;
     align-items: center;
+    z-index: 5; /* Ensure it stays above other elements */
 }
 
-/* Logo container - UPDATED */
+/* Logo container */
 .logo-container {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-/* Brand container - UPDATED */
+/* Temporary logo */
+.temp-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.temp-logo i {
+    font-size: 20px;
+}
+
+/* Brand styling */
 .brand {
     display: flex;
     align-items: center;
     text-decoration: none;
+    position: relative; /* Changed from absolute */
 }
 
 .brand h1 {
     margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.brand-main {
+    color: #333333;
+}
+
+.brand-secondary {
+    color: #8e2465;
+}
+
+/* Hover effects */
+.logo-container:hover .temp-logo {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(142, 36, 101, 0.4);
+}
+
+.brand:hover h1 {
+    opacity: 0.9;
 }
 
 /* Profile container - UPDATED */
