@@ -187,29 +187,32 @@ function setupProfileMenu() {
         const userData = JSON.parse(localStorage.getItem('user'));
         if (userData) {
             // Update profile information
-            profileName.textContent = userData.name || 'User Name';
-            profileEmail.textContent = userData.email || 'user@example.com';
+            if (profileName) profileName.textContent = userData.name || 'User Name';
+            if (profileEmail) profileEmail.textContent = userData.email || 'user@example.com';
             
             // Update avatar if available
-            if (userData.picture) {
+            if (userData.picture && profileAvatar) {
                 profileAvatar.src = userData.picture;
             }
         }
     }
     
     if (profileButton && profileMenu) {
+        console.log("Profile menu setup initialized"); // Debug log
+        
         // Load user data when page loads
         loadUserData();
         
         // Toggle menu on button click
         profileButton.addEventListener('click', function(event) {
+            console.log("Profile button clicked"); // Debug log
             event.stopPropagation();
             profileMenu.classList.toggle('active');
         });
         
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (!profileMenu.contains(event.target) && !profileButton.contains(event.target)) {
+            if (profileMenu && !profileMenu.contains(event.target) && !profileButton.contains(event.target)) {
                 profileMenu.classList.remove('active');
             }
         });
@@ -238,6 +241,8 @@ function setupProfileMenu() {
                 }
             });
         }
+    } else {
+        console.warn("Profile button or menu not found in the DOM"); // Debug warning
     }
     
     // Notification button click handling
@@ -248,17 +253,17 @@ function setupProfileMenu() {
     }
 }
 
-// Call this function in your existing DOMContentLoaded event listener
+// Initialize everything when DOM is loaded - REMOVE DUPLICATE
 document.addEventListener('DOMContentLoaded', function() {
-    // Other existing initializations
+    console.log("DOM loaded - initializing components");
     initializeHomePage();
     setupExpandableSearch();
     setupProfileMenu();
 });
 
-// Initialize everything when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initializeHomePage();
-    setupExpandableSearch();
-    setupProfileMenu();
-});
+// Remove this duplicate event listener that was at the end of your file
+// document.addEventListener('DOMContentLoaded', function() {
+//     initializeHomePage();
+//     setupExpandableSearch();
+//     setupProfileMenu();
+// });
