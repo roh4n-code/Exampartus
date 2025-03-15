@@ -23,43 +23,44 @@
     letter-spacing: 0.5px;
 }
 
-/* Main header structure - UPDATED */
+/* Main header structure to match homepage */
 .main-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-}
-
-/* Left section containing logo and brand - NEW */
-.left-section {
-    display: flex;
     align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
 }
 
-/* Logo container - UPDATED */
 .logo-container {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 20px;
+    flex: 1;
 }
 
-/* Brand container - UPDATED */
+.logo-container a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .brand {
-    display: flex;
-    align-items: center;
+    flex: 2;
+    text-align: center;
+}
+
+.brand a {
     text-decoration: none;
 }
 
-.brand h1 {
-    margin: 0;
+.profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* Profile container - UPDATED */
-.profile-container {
-    display: flex;
-    align-items: center;
+/* Back button positioning */
+.back-button {
+    margin-right: 10px;
 }
 
 .action-buttons {
@@ -111,7 +112,7 @@
 .sorting-options {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .sorting-options label {
@@ -121,25 +122,34 @@
 }
 
 .sorting-options select {
-    padding: 8px 12px;
+    padding: 10px 36px 10px 16px;
     border: 1px solid #e0e0e0;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: white;
     font-family: inherit;
     font-size: 0.9rem;
     color: #333333;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     outline: none;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238e2465' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .sorting-options select:hover {
     border-color: #8e2465;
+    box-shadow: 0 2px 8px rgba(142, 36, 101, 0.15);
 }
 
 .sorting-options select:focus {
     border-color: #8e2465;
-    box-shadow: 0 0 0 2px rgba(142, 36, 101, 0.2);
+    box-shadow: 0 0 0 3px rgba(142, 36, 101, 0.2);
 }
 
 .lectures-grid {
@@ -148,87 +158,6 @@
     gap: 20px;
 }
 
-.lecture-tile {
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    color: #333333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #8e2465;
-    display: flex;
-    flex-direction: column;
-}
-
-.lecture-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
-}
-
-.lecture-number {
-    color: #8e2465;
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-.lecture-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333333;
-}
-
-.lecture-date {
-    color: #666666;
-    font-size: 0.9rem;
-    margin-top: auto;
-}
-
-.lecture-instructor {
-    font-size: 0.9rem;
-    color: #666666;
-    margin-top: 5px;
-    font-style: italic;
-}
-
-/* No lectures message */
-.no-lectures {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 30px;
-    color: #6c757d;
-    font-size: 1.2rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .lectures-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .course-info h1 {
-        font-size: 1.6rem;
-    }
-    
-    .lectures-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    
-    .sorting-options {
-        width: 100%;
-    }
-    
-    .sorting-options select {
-        flex-grow: 1;
-    }
-}
-
-/* Modern Lecture Tile Styles */
 .lecture-tile {
     background: #ffffff;
     border-radius: 12px;
@@ -317,6 +246,7 @@
     font-size: 0.85rem;
     opacity: 0.7;
 }
+
 /* Make logo and brand clickable */
 .logo-container, .brand {
     text-decoration: none;
@@ -337,7 +267,7 @@
 .brand:hover h1 {
     opacity: 0.9;
 }
-/* Add this to your course-detail.css file */
+
 .temp-logo {
     display: flex;
     align-items: center;
@@ -353,77 +283,6 @@
 .temp-logo i {
     font-size: 20px; /* Adjust as needed */
 }
-/* Add this to your course-detail.css file */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Ensure the logo stays on the left */
-.logo-container {
-    flex: 1;
-}
-
-/* Center the brand text */
-.brand {
-    flex: 2;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Keep the profile container on the right */
-.profile-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-/* Modern Sort Dropdown Styles */
-.sorting-options {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.sorting-options label {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #666666;
-}
-
-.sorting-options select {
-    padding: 10px 36px 10px 16px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: white;
-    font-family: inherit;
-    font-size: 0.9rem;
-    color: #333333;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    outline: none;
-    appearance: none; 
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238e2465' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 14px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.sorting-options select:hover {
-    border-color: #8e2465;
-    box-shadow: 0 2px 8px rgba(142, 36, 101, 0.15);
-}
-
-.sorting-options select:focus {
-    border-color: #8e2465;
-    box-shadow: 0 0 0 3px rgba(142, 36, 101, 0.2);
-}
-/* Add these styles to course-detail.css if they're not already there */
 
 /* Profile Wrapper */
 .profile-wrapper {
@@ -493,7 +352,7 @@
 .profile-menu.active {
     display: block;
 }
-/* Add these styles to your CSS file */
+
 .brand-link {
     display: inline-block;
     text-decoration: none;
@@ -521,4 +380,60 @@
 /* Add hover effect */
 .brand-link:hover .brand-text {
     opacity: 0.9;
+}
+
+/* No lectures message */
+.no-lectures {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .lectures-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-info h1 {
+        font-size: 1.6rem;
+    }
+    
+    .lectures-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .sorting-options {
+        width: 100%;
+    }
+    
+    .sorting-options select {
+        flex-grow: 1;
+    }
+}
+
+/* Responsive adjustments to match homepage */
+@media (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-container, .brand {
+        flex: none;
+        width: 100%;
+    }
+    
+    .profile-container {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
 }
