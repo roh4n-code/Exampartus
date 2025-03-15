@@ -154,6 +154,10 @@
                 height: 45px;
                 font-size: 20px;
             }
+            .g_id_signin {
+            display: none;
+            }
+
         }
     </style>
 </head>
@@ -194,38 +198,66 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Google login button handler
+        // Initialize the Google Sign-In API when the page loads
+        window.onload = function() {
+            console.log("Initializing Google Sign-In...");
+            
+            google.accounts.id.initialize({
+                client_id: "113460596760-ltqv545uad4bbh8rd6h8ncs3qdnhav15.apps.googleusercontent.com",
+                callback: handleCredentialResponse,
+                auto_select: false, // Don't automatically select an account
+                cancel_on_tap_outside: true // Allow closing the popup by clicking outside
+            });
+            
+            // Set up the click handler for the custom button
             const googleLoginBtn = document.getElementById('googleLoginBtn');
             googleLoginBtn.addEventListener('click', function() {
-                // Trigger the Google Sign-In popup
-                google.accounts.id.prompt();
+                console.log("Button clicked, triggering Google Sign-In...");
+                google.accounts.id.prompt((notification) => {
+                    console.log("Prompt notification:", notification);
+                    if (notification.isNotDisplayed()) {
+                        console.log("Prompt not displayed, reason:", notification.getNotDisplayedReason());
+                    } else if (notification.isSkippedMoment()) {
+                        console.log("Prompt skipped, reason:", notification.getSkippedReason());
+                    } else if (notification.isDismissedMoment()) {
+                        console.log("Prompt dismissed, reason:", notification.getDismissedReason());
+                    }
+                });
             });
-        });
+            
+            // Check if user is already signed in
+            checkLoginStatus();
+        };
 
         // Callback function for handling the Google Sign-In response
         function handleCredentialResponse(response) {
-            // The response contains a JWT ID token in response.credential
-            console.log("Encoded JWT ID token: " + response.credential);
+            console.log("Received response from Google:", response);
             
-            // Decode the JWT to get user information
-            const responsePayload = parseJwt(response.credential);
-            
-            console.log("ID: " + responsePayload.sub);
-            console.log("Name: " + responsePayload.name);
-            console.log("Email: " + responsePayload.email);
-            console.log("Picture: " + responsePayload.picture);
-            
-            // Store user information in localStorage or sessionStorage
-            localStorage.setItem('user', JSON.stringify({
-                id: responsePayload.sub,
-                name: responsePayload.name,
-                email: responsePayload.email,
-                picture: responsePayload.picture
-            }));
-            
-            // Redirect to index or dashboard page
-            window.location.href = 'homepage.html';
+            if (response.credential) {
+                // The response contains a JWT ID token in response.credential
+                console.log("Encoded JWT ID token: " + response.credential);
+                
+                // Decode the JWT to get user information
+                const responsePayload = parseJwt(response.credential);
+                
+                console.log("ID: " + responsePayload.sub);
+                console.log("Name: " + responsePayload.name);
+                console.log("Email: " + responsePayload.email);
+                console.log("Picture: " + responsePayload.picture);
+                
+                // Store user information in localStorage
+                localStorage.setItem('user', JSON.stringify({
+                    id: responsePayload.sub,
+                    name: responsePayload.name,
+                    email: responsePayload.email,
+                    picture: responsePayload.picture
+                }));
+                
+                // Redirect to index or dashboard page
+                window.location.href = 'index.html';
+            } else {
+                console.error("No credential received from Google");
+            }
         }
         
         // Helper function to parse JWT
@@ -244,12 +276,9 @@
             const user = localStorage.getItem('user');
             if (user) {
                 // User is signed in, redirect to index page
-                window.location.href = 'homepage.html';
+                window.location.href = 'index.html';
             }
         }
-        
-        // Check login status when page loads
-        checkLoginStatus();
     </script>
 </body>
 </html>
