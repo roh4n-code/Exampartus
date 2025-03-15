@@ -132,27 +132,187 @@
   "CS F241": [
     {
       "id": 1,
-      "title": "Introduction",
-      "date": "Feb 12, 2025",
-      "dateObj": "2025-02-12",
-      "instructor": "Dr. CKV",
-      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQDGGRXZg5RAgyW7aFxMnvAB9sSQNBzSvfxBg5X0ts5nHw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p4Spyh"
+      "title": "Introduction and Handout Discussion",
+      "date": "Jan 29, 2025",
+      "dateObj": "2025-01-29",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQDGGRXZg5RAgyW7aFxMnvAB9sSQNBzSvfxBg5X0ts5nHw?e=4Jfqc3"
     },
     {
       "id": 2,
-      "title": "8086 Processor",
-      "date": "Feb 15, 2025",
-      "dateObj": "2025-02-15",
-      "instructor": "Dr. CKV",
-      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EY8vl_Uz4cdFqn6Y9ykcrbMB_2OIOdV9_UFj2pLkanPRPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BeiWNy"
+      "title": "Instruction Execution, Memory Operation, Types of Memory",
+      "date": "Jan 30, 2025",
+      "dateObj": "2025-01-30",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EY8vl_Uz4cdFqn6Y9ykcrbMB_2OIOdV9_UFj2pLkanPRPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qmClZP"
     },
     {
       "id": 3,
-      "title": "BUS Interface",
+      "title": "8086 Overview, Address, Data and Control Bus",
+      "date": "Jan 31, 2025",
+      "dateObj": "2025-01-31",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUnptt1nKCNBvHaFoIPCjeABNKeFNIVRN4atjo-gHhvy6A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=oX9ED9"
+    },
+    {
+      "id": 4,
+      "title": "8086 Internal Diagram, BIU and EU, 8086 Registers (Including Flag Reg)",
+      "date": "Feb 1, 2025",
+      "dateObj": "2025-02-01",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Ef8dWQZwQodLrrVcsNsgx2cBVnuKWiRW6wyb5Gh-Pne5fg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=b7hzHF"
+    },
+    {
+      "id": 5,
+      "title": "8086 Instruction Set, Addressing Modes",
+      "date": "Feb 2, 2025",
+      "dateObj": "2025-02-02",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EVlQL1BjavFKlbSEGvNDO0EBhhLDFIGjEcL2vX7GSXWguw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Kda83z"
+    },
+    {
+      "id": 6,
+      "title": "Memory Banking in 8086",
+      "date": "Feb 3, 2025",
+      "dateObj": "2025-02-03",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EeWb3Ji04tFMnGj1SpgH0ukBF09wfK7XYuGTdu3kWvrW_w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zzLXp1"
+    },
+    {
+      "id": 7,
+      "title": "Segmentation And Two Examples",
+      "date": "Feb 4, 2025",
+      "dateObj": "2025-02-04",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EcCmpzjcRmJIoLUikg6M9tEBvq1gb_0d3cb-KGhSURrolg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YEYLFY"
+    },
+    {
+      "id": 8,
+      "title": "Data Transfer Instructions, ALP Example",
+      "date": "Feb 5, 2025",
+      "dateObj": "2025-02-05",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUzRiBXynO1Dp3fdl142bGQBgO_s9hc_Yy1fD9DcdIDNVQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hvBP42"
+    },
+    {
+      "id": 9,
+      "title": "8086 Instruction Encoding Format: MOV",
+      "date": "Feb 6, 2025",
+      "dateObj": "2025-02-06",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQO-Rhj9TclEpqoA-YFQUPgB6_W7EdWftXb42JSgr7jTPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ymKfET"
+    },
+    {
+      "id": 10,
+      "title": "Arithmetic Instructions, ALP Examples",
+      "date": "Feb 7, 2025",
+      "dateObj": "2025-02-07",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EaJGhVao-l5Kkl3GHU0CzaIBt4oTj6EkYsvFR9rrw312PA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eRQfct"
+    },
+    {
+      "id": 11,
+      "title": "Logical Instructions",
+      "date": "Feb 8, 2025",
+      "dateObj": "2025-02-08",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EZuKr9zbrGpNqtY-J6IGjSgBn5oah6f2gbHVUN6q8u0ZIw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=s2lVX8"
+    },
+    {
+      "id": 12,
+      "title": "Branch Instructions",
+      "date": "Feb 9, 2025",
+      "dateObj": "2025-02-09",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EfQbNgwe_7ZGqwgy9TrA8ZABaNMjCpuCDs9fDWwNo-n3Sw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8m8NmI"
+    },
+    {
+      "id": 13,
+      "title": "Branch Instructions Part 2",
+      "date": "Feb 10, 2025",
+      "dateObj": "2025-02-10",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EcTRyhU7HUNItxm9DSCW5T8BuFMqO4bHYauel1Q1j_Orsw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PfbpBH"
+    },
+    {
+      "id": 14,
+      "title": "String Instructions",
+      "date": "Feb 11, 2025",
+      "dateObj": "2025-02-11",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ES6J7mpABAFDqECocIo4RDgBMkkIJz3d2FiqNz2O-u79bQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ICiAUT"
+    },
+    {
+      "id": 15,
+      "title": "String Instructions (Lods, Stos, Cmps)",
+      "date": "Feb 12, 2025",
+      "dateObj": "2025-02-12",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EXK_p2wL0qRPtZUlyi41TB8BqBBA3Cu5AtYZtvAfCZ1mrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bWXvOv"
+    },
+    {
+      "id": 16,
+      "title": "Some Special 8086 Instructions",
+      "date": "Feb 13, 2025",
+      "dateObj": "2025-02-13",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EeiuCt3GX3dHiQ1x9gGWNQUB5dnLbo8BwVmFdhA4N2IDog?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tT79tn"
+    },
+    {
+      "id": 17,
+      "title": "Stack Instructions",
+      "date": "Feb 14, 2025",
+      "dateObj": "2025-02-14",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ES8hIH1aqGBGsfcVm8ZZXVQBJVMD2LddTgWP4ItoejM6dQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aiMzsl"
+    },
+    {
+      "id": 18,
+      "title": "Procedures",
       "date": "Feb 17, 2025",
       "dateObj": "2025-02-17",
-      "instructor": "Dr. CKV",
-      "onedriveLink": "https://onedrive.live.com/lecture-cs-f241-3"
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ESxiYdqOYpdOu5EjlvDK1RIBeiv20VZ-8hm1ewNLYYv14Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9AC8Ww"
+    },
+    {
+      "id": 19,
+      "title": "No Topic Entered",
+      "date": "Feb 19, 2025",
+      "dateObj": "2025-02-19",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EYdBjTHSLHZPoHdPuhG_kFQBhqbPsQTwTDtCFFv27QAG7g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4Wuqgs"
+    },
+    {
+      "id": 20,
+      "title": "No Topic Entered",
+      "date": "Feb 21, 2025",
+      "dateObj": "2025-02-21",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EVslWn2lTP9IseUcmPRcXjoBtuoVASKk2PEWZ0zQzWjFOw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=k81ZzK"
+    },
+    {
+      "id": 21,
+      "title": "No Topic Entered",
+      "date": "Feb 24, 2025",
+      "dateObj": "2025-02-24",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EcDetPN3OjFEs5QmkVujpv4B0Z6AXTVbqOvvp_esDm9I0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mF2xnC"
+    },
+    {
+      "id": 22,
+      "title": "No Topic Entered",
+      "date": "Mar 10, 2025",
+      "dateObj": "2025-03-10",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUg3uUx6vzJImNO-hqFNm9QB20TOJ1YV4ASXTCwUe1qcUA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9z7aZU"
+    },
+    {
+      "id": 23,
+      "title": "No Topic Entered",
+      "date": "Mar 12, 2025",
+      "dateObj": "2025-03-12",
+      "instructor": "Chetan Kumar",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Efvszih3HBBJm_O9k97VqNwByQcfWNuJJ66ExWxbRCMn3Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=siidRT"
     }
   ]
 }
