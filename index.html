@@ -253,6 +253,67 @@
                 window.location.href = 'homepage.html';
             }
         });
+        // Add click event to the button
+        document.getElementById('googleLoginBtn').addEventListener('click', () => {
+            // Configure Google provider to request email
+            provider.addScope('email');
+            
+            // Sign in with Google popup
+            auth.signInWithPopup(provider)
+                .then((result) => {
+                    // User signed in
+                    const user = result.user;
+                    console.log("User signed in:", user);
+                    
+                    // Check if the user's email domain is from hyderabad.bits-pilani.ac.in
+                    if (user.email.endsWith('@hyderabad.bits-pilani.ac.in')) {
+                        // Store user info in localStorage
+                        localStorage.setItem('user', JSON.stringify({
+                            id: user.uid,
+                            name: user.displayName,
+                            email: user.email,
+                            picture: user.photoURL
+                        }));
+                        
+                        // Redirect to homepage
+                        window.location.href = 'homepage.html';
+                    } else {
+                        // Sign out the user if they don't have the correct domain
+                        auth.signOut();
+                        alert("Access restricted. Only @hyderabad.bits-pilani.ac.in email addresses are allowed.");
+                    }
+                })
+                .catch((error) => {
+                    // Handle errors
+                    console.error("Error during sign in:", error);
+                    alert("Error signing in. Please try again.");
+                });
+        });
+
+        // Check if user is already logged in
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                console.log("User already signed in:", user);
+                
+                // Check if the user's email domain is from hyderabad.bits-pilani.ac.in
+                if (user.email.endsWith('@hyderabad.bits-pilani.ac.in')) {
+                    // Store or update user info
+                    localStorage.setItem('user', JSON.stringify({
+                        id: user.uid,
+                        name: user.displayName,
+                        email: user.email,
+                        picture: user.photoURL
+                    }));
+                    
+                    // Redirect to homepage
+                    window.location.href = 'homepage.html';
+                } else {
+                    // Sign out the user if they don't have the correct domain
+                    auth.signOut();
+                    alert("Access restricted. Only @hyderabad.bits-pilani.ac.in email addresses are allowed.");
+                }
+            }
+        });
     </script>
 </body>
 </html>
