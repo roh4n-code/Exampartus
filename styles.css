@@ -92,38 +92,6 @@ body {
     gap: 15px;
 }
 
-/* Notification Button */
-.notification-button {
-    background: none;
-    border: none;
-    font-size: 22px;
-    color: #5f1b47;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-    position: relative;
-}
-
-.notification-button:hover {
-    background-color: rgba(142, 36, 101, 0.1);
-}
-
-.notification-badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #e74c3c;
-    color: white;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
 
 /* Profile Button */
 .profile-wrapper {

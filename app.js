@@ -180,7 +180,6 @@ function setupProfileMenu() {
     const profileAvatar = document.getElementById('profileAvatar');
     const profileName = document.getElementById('profileName');
     const profileEmail = document.getElementById('profileEmail');
-    const notificationButton = document.getElementById('notificationButton');
     
     // Load user data from localStorage
     function loadUserData() {
@@ -245,12 +244,6 @@ function setupProfileMenu() {
         console.warn("Profile button or menu not found in the DOM"); // Debug warning
     }
     
-    // Notification button click handling
-    if (notificationButton) {
-        notificationButton.addEventListener('click', function() {
-            alert('Notifications feature coming soon!');
-        });
-    }
 }
 
 // Initialize everything when DOM is loaded - REMOVE DUPLICATE
