@@ -153,6 +153,7 @@
             text-align: center;
             font-size: 0.9rem;
             display: none;
+            position: relative;
         }
         
         .notice.show {
@@ -160,6 +161,15 @@
             animation: fadeIn 0.4s ease-out;
         }
         
+        .notice-close {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #721c24;
+        }
+
         /* Media Queries */
         @media (max-width: 480px) {
             .login-container {
@@ -194,6 +204,7 @@
         <!-- Domain restriction notice -->
         <div class="notice" id="domainNotice">
             Only users with @hyderabad.bits-pilani.ac.in email addresses are allowed to access this application.
+            <span class="notice-close" id="closeNotice">&times;</span>
         </div>
 
         <!-- Google Sign-In button -->
@@ -236,16 +247,30 @@
             return email.endsWith('@hyderabad.bits-pilani.ac.in');
         }
         
+        // Initialize DOM elements
+        const domainNotice = document.getElementById('domainNotice');
+        const closeNotice = document.getElementById('closeNotice');
+        const googleLoginBtn = document.getElementById('googleLoginBtn');
+        
         // Show domain restriction notice
         function showDomainNotice() {
-            document.getElementById('domainNotice').classList.add('show');
-            setTimeout(() => {
-                document.getElementById('domainNotice').classList.remove('show');
-            }, 5000);
+            domainNotice.classList.add('show');
+            
+            // Check if there's a notice timeout already set and clear it
+            if (window.noticeTimeout) {
+                clearTimeout(window.noticeTimeout);
+            }
+            
+            // Keep the notice visible indefinitely (user must close it manually)
         }
         
+        // Close notice when X is clicked
+        closeNotice.addEventListener('click', () => {
+            domainNotice.classList.remove('show');
+        });
+        
         // Add click event to the button
-        document.getElementById('googleLoginBtn').addEventListener('click', () => {
+        googleLoginBtn.addEventListener('click', () => {
             // Sign in with Google popup
             auth.signInWithPopup(provider)
                 .then((result) => {
@@ -316,6 +341,21 @@
             } else if (isLoggingOut) {
                 // Clear the logout flag
                 localStorage.removeItem('logging_out');
+                
+                // Show domain notice if coming back from access-denied page
+                const fromAccessDenied = sessionStorage.getItem('from_access_denied');
+                if (fromAccessDenied) {
+                    showDomainNotice();
+                    sessionStorage.removeItem('from_access_denied');
+                }
+            }
+        });
+        
+        // Check if redirected from access-denied page
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('from') === 'access-denied') {
+                showDomainNotice();
             }
         });
     </script>

@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exampartus | Login</title>
+    <title>Exampartus | Access Denied</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Firebase App (the core Firebase SDK) -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-    <!-- Firebase Auth -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
     
     <style>
         /* Reset and Base Styles */
@@ -31,14 +26,15 @@
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
 
-        /* Login Container */
-        .login-container {
+        /* Error Container */
+        .error-container {
             width: 90%;
-            max-width: 400px;
+            max-width: 500px;
             padding: 40px;
             background-color: white;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
             animation: fadeIn 0.6s ease-out;
         }
 
@@ -47,276 +43,94 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Logo and Brand Section */
-        .login-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .logo-container {
+        /* Icon */
+        .error-icon {
+            color: #8e2465;
+            font-size: 4rem;
             margin-bottom: 20px;
         }
 
-        .temp-logo {
-            width: 50px;
-            height: 50px;
-            background-color: #8e2465;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            box-shadow: 0 3px 8px rgba(142, 36, 101, 0.3);
-            margin: 0 auto;
-        }
-
-        .brand {
-            margin-bottom: 30px;
-        }
-
-        .brand h1 {
+        /* Headers */
+        h1 {
             font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .brand-main {
+            margin-bottom: 20px;
             color: #8e2465;
         }
 
-        .brand-secondary {
-            color: #5f1b47;
+        /* Message */
+        .error-message {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #6c757d;
         }
 
-        /* Google Login Button */
-        .google-login {
-            width: 100%;
-            padding: 16px;
-            background-color: white;
-            border: 1px solid #e5e7eb;
+        .domain-highlight {
+            font-weight: bold;
+            color: #8e2465;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #8e2465;
+            color: white;
+            border: none;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
             font-size: 1.1rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            margin-bottom: 25px;
-        }
-
-        .google-login:hover {
-            background-color: #f8f9fa;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .google-login:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .google-icon {
-            margin-right: 12px;
-        }
-
-        /* Footer */
-        .form-footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-
-        .form-footer a {
-            color: #8e2465;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
+            box-shadow: 0 4px 8px rgba(142, 36, 101, 0.3);
         }
 
-        .form-footer a:hover {
-            color: #5f1b47;
-            text-decoration: underline;
+        .back-button:hover {
+            background-color: #732057;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(142, 36, 101, 0.4);
         }
 
-        /* Domain Restriction Notice */
-        .notice {
-            margin-bottom: 20px;
-            padding: 12px;
-            background-color: #f8d7da;
-            color: #721c24;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 0.9rem;
-            display: none;
+        .back-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(142, 36, 101, 0.3);
         }
-        
-        .notice.show {
-            display: block;
-            animation: fadeIn 0.4s ease-out;
-        }
-        
+
         /* Media Queries */
         @media (max-width: 480px) {
-            .login-container {
+            .error-container {
                 padding: 30px 20px;
             }
             
-            .brand h1 {
+            h1 {
                 font-size: 1.8rem;
             }
             
-            .temp-logo {
-                width: 45px;
-                height: 45px;
-                font-size: 20px;
+            .error-icon {
+                font-size: 3.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-header">
-            <div class="logo-container">
-                <div class="temp-logo">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-            </div>
-            <div class="brand">
-                <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
-            </div>
+    <div class="error-container">
+        <div class="error-icon">
+            <i class="fas fa-user-lock"></i>
         </div>
-
-        <!-- Domain restriction notice -->
-        <div class="notice" id="domainNotice">
-            Only users with @hyderabad.bits-pilani.ac.in email addresses are allowed to access this application.
+        <h1>Access Denied</h1>
+        <div class="error-message">
+            <p>Sorry, access to Exampartus is restricted to users with <span class="domain-highlight">@hyderabad.bits-pilani.ac.in</span> email addresses only.</p>
+            <p>Please sign in with your BITS Pilani Hyderabad Campus email account.</p>
         </div>
-
-        <!-- Google Sign-In button -->
-        <button type="button" class="google-login" id="googleLoginBtn">
-            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
-                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-            </svg>
-            Sign in with Google
-        </button>
-
-        <div class="form-footer">
-            <p>By signing in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-        </div>
+        <a href="index.html?from=access-denied" class="back-button" id="backButton">
+            Go Back to Login
+        </a>
     </div>
 
     <script>
-        // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyA8DIS5ycerv1CfX0mqv4AakvI6DNi6pKs",
-            authDomain: "exampartus-da3ae.firebaseapp.com",
-            projectId: "exampartus-da3ae",
-            storageBucket: "exampartus-da3ae.firebasestorage.app",
-            messagingSenderId: "147929782391",
-            appId: "1:147929782391:web:a6c186f3ec355a37454e72",
-            measurementId: "G-94PY2KLR43"
-        };
-        
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        
-        // Initialize Firebase Auth
-        const auth = firebase.auth();
-        const provider = new firebase.auth.GoogleAuthProvider();
-        
-        // Function to check if email domain is valid
-        function isValidDomain(email) {
-            return email.endsWith('@hyderabad.bits-pilani.ac.in');
-        }
-        
-        // Show domain restriction notice
-        function showDomainNotice() {
-            document.getElementById('domainNotice').classList.add('show');
-            setTimeout(() => {
-                document.getElementById('domainNotice').classList.remove('show');
-            }, 5000);
-        }
-        
-        // Add click event to the button
-        document.getElementById('googleLoginBtn').addEventListener('click', () => {
-            // Sign in with Google popup
-            auth.signInWithPopup(provider)
-                .then((result) => {
-                    // User signed in
-                    const user = result.user;
-                    console.log("User signed in:", user);
-                    
-                    // Check if user email domain is valid
-                    if (isValidDomain(user.email)) {
-                        // Store user info in localStorage
-                        localStorage.setItem('user', JSON.stringify({
-                            id: user.uid,
-                            name: user.displayName,
-                            email: user.email,
-                            picture: user.photoURL
-                        }));
-                        
-                        // Redirect to homepage
-                        window.location.href = 'homepage.html';
-                    } else {
-                        // Set logging out flag
-                        localStorage.setItem('logging_out', 'true');
-                        
-                        // Sign out the user
-                        auth.signOut().then(() => {
-                            // Redirect to access denied page
-                            window.location.href = 'access-denied.html';
-                        });
-                    }
-                })
-                .catch((error) => {
-                    // Handle errors
-                    console.error("Error during sign in:", error);
-                    alert("Error signing in. Please try again.");
-                });
-        });
-        
-        // Check if user is already logged in
-        auth.onAuthStateChanged((user) => {
-            // Check if we're in the logout process
-            const isLoggingOut = localStorage.getItem('logging_out') === 'true';
-            
-            if (user && !isLoggingOut) {
-                console.log("User already signed in:", user);
-                
-                // Check if user email domain is valid
-                if (isValidDomain(user.email)) {
-                    // Store or update user info
-                    localStorage.setItem('user', JSON.stringify({
-                        id: user.uid,
-                        name: user.displayName,
-                        email: user.email,
-                        picture: user.photoURL
-                    }));
-                    
-                    // Redirect to homepage
-                    window.location.href = 'homepage.html';
-                } else {
-                    // Set logging out flag
-                    localStorage.setItem('logging_out', 'true');
-                    
-                    // Sign out the user
-                    auth.signOut().then(() => {
-                        // Show domain restriction notice
-                        showDomainNotice();
-                    });
-                }
-            } else if (isLoggingOut) {
-                // Clear the logout flag
-                localStorage.removeItem('logging_out');
-            }
+        // Set a flag for the login page to show notice
+        document.getElementById('backButton').addEventListener('click', () => {
+            sessionStorage.setItem('from_access_denied', 'true');
         });
     </script>
 </body>
