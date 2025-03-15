@@ -87,7 +87,52 @@
             </footer>
         </main>
     </div>
+    <script>
+        // Add this at the beginning of homepage.html
+        document.addEventListener('DOMContentLoaded', function() {
+          // Check if user data exists in localStorage
+          const userData = localStorage.getItem('user');
+          
+          // If no user data found, redirect to login page
+          if (!userData) {
+            window.location.href = 'index.html';
+            return; // Stop further execution
+          }
+          
+          // If using Firebase auth, also verify with Firebase
+          if (window.firebase && firebase.auth) {
+            const auth = firebase.auth();
+            
+            // Add an auth state listener
+            auth.onAuthStateChanged(function(user) {
+              if (!user) {
+                // No authenticated user, redirect to login
+                window.location.href = 'index.html';
+              }
+            });
+          }
+        });
+      </script>
+            <!-- Firebase App (the core Firebase SDK) -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+        <!-- Firebase Auth -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
 
+        <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA8DIS5ycerv1CfX0mqv4AakvI6DNi6pKs",
+            authDomain: "exampartus-da3ae.firebaseapp.com",
+            projectId: "exampartus-da3ae",
+            storageBucket: "exampartus-da3ae.firebasestorage.app",
+            messagingSenderId: "147929782391",
+            appId: "1:147929782391:web:a6c186f3ec355a37454e72",
+            measurementId: "G-94PY2KLR43"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
     <script src="course-detail.js"></script>
 </body>
 </html>
