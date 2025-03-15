@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exampartus | Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Load the Google Sign-In API -->
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    
     <style>
         /* Reset and Base Styles */
         * {
@@ -154,10 +158,6 @@
                 height: 45px;
                 font-size: 20px;
             }
-            .g_id_signin {
-            display: none;
-            }
-
         }
     </style>
 </head>
@@ -185,100 +185,74 @@
             Sign in with Google
         </button>
 
-        <!-- Container for the Google Sign-In API -->
-        <div id="g_id_onload"
-             data-client_id="113460596760-ltqv545uad4bbh8rd6h8ncs3qdnhav15.apps.googleusercontent.com"
-             data-callback="handleCredentialResponse"
-             data-auto_prompt="false">
-        </div>
-
         <div class="form-footer">
             <p>By signing in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
         </div>
     </div>
 
     <script>
-        // Initialize the Google Sign-In API when the page loads
-        window.onload = function() {
-            console.log("Initializing Google Sign-In...");
-            
-            google.accounts.id.initialize({
-                client_id: "113460596760-ltqv545uad4bbh8rd6h8ncs3qdnhav15.apps.googleusercontent.com",
-                callback: handleCredentialResponse,
-                auto_select: false, // Don't automatically select an account
-                cancel_on_tap_outside: true // Allow closing the popup by clicking outside
-            });
-            
-            // Set up the click handler for the custom button
-            const googleLoginBtn = document.getElementById('googleLoginBtn');
-            googleLoginBtn.addEventListener('click', function() {
-                console.log("Button clicked, triggering Google Sign-In...");
-                google.accounts.id.prompt((notification) => {
-                    console.log("Prompt notification:", notification);
-                    if (notification.isNotDisplayed()) {
-                        console.log("Prompt not displayed, reason:", notification.getNotDisplayedReason());
-                    } else if (notification.isSkippedMoment()) {
-                        console.log("Prompt skipped, reason:", notification.getSkippedReason());
-                    } else if (notification.isDismissedMoment()) {
-                        console.log("Prompt dismissed, reason:", notification.getDismissedReason());
-                    }
-                });
-            });
-            
-            // Check if user is already signed in
-            checkLoginStatus();
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA8DIS5ycerv1CfX0mqv4AakvI6DNi6pKs",
+            authDomain: "exampartus-da3ae.firebaseapp.com",
+            projectId: "exampartus-da3ae",
+            storageBucket: "exampartus-da3ae.firebasestorage.app",
+            messagingSenderId: "147929782391",
+            appId: "1:147929782391:web:a6c186f3ec355a37454e72",
+            measurementId: "G-94PY2KLR43"
         };
-
-        // Callback function for handling the Google Sign-In response
-        function handleCredentialResponse(response) {
-            console.log("Received response from Google:", response);
-            
-            if (response.credential) {
-                // The response contains a JWT ID token in response.credential
-                console.log("Encoded JWT ID token: " + response.credential);
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        // Initialize the FirebaseUI Widget using Firebase
+        const auth = firebase.auth();
+        const provider = new firebase.auth.GoogleAuthProvider();
+        
+        // Add click event to the button
+        document.getElementById('googleLoginBtn').addEventListener('click', () => {
+            // Sign in with Google popup
+            auth.signInWithPopup(provider)
+                .then((result) => {
+                    // User signed in
+                    const user = result.user;
+                    console.log("User signed in:", user);
+                    
+                    // Store user info in localStorage
+                    localStorage.setItem('user', JSON.stringify({
+                        id: user.uid,
+                        name: user.displayName,
+                        email: user.email,
+                        picture: user.photoURL
+                    }));
+                    
+                    // Redirect to index page
+                    window.location.href = 'index.html';
+                })
+                .catch((error) => {
+                    // Handle errors
+                    console.error("Error during sign in:", error);
+                    alert("Error signing in. Please try again.");
+                });
+        });
+        
+        // Check if user is already logged in
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                console.log("User already signed in:", user);
                 
-                // Decode the JWT to get user information
-                const responsePayload = parseJwt(response.credential);
-                
-                console.log("ID: " + responsePayload.sub);
-                console.log("Name: " + responsePayload.name);
-                console.log("Email: " + responsePayload.email);
-                console.log("Picture: " + responsePayload.picture);
-                
-                // Store user information in localStorage
+                // Store or update user info
                 localStorage.setItem('user', JSON.stringify({
-                    id: responsePayload.sub,
-                    name: responsePayload.name,
-                    email: responsePayload.email,
-                    picture: responsePayload.picture
+                    id: user.uid,
+                    name: user.displayName,
+                    email: user.email,
+                    picture: user.photoURL
                 }));
                 
-                // Redirect to index or dashboard page
-                window.location.href = 'index.html';
-            } else {
-                console.error("No credential received from Google");
-            }
-        }
-        
-        // Helper function to parse JWT
-        function parseJwt(token) {
-            const base64Url = token.split('.')[1];
-            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-            }).join(''));
-            
-            return JSON.parse(jsonPayload);
-        }
-        
-        // Check if user is already signed in
-        function checkLoginStatus() {
-            const user = localStorage.getItem('user');
-            if (user) {
-                // User is signed in, redirect to index page
+                // Redirect to index page
                 window.location.href = 'index.html';
             }
-        }
+        });
     </script>
 </body>
 </html>
