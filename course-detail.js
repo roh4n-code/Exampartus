@@ -147,7 +147,7 @@ function setupBackButton() {
     
     if (backButton) {
         backButton.addEventListener('click', function() {
-            window.location.href = 'index.html';
+            window.location.href = 'homepage.html';
         });
     }
 }

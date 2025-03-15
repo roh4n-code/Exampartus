@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exampartus | Course Detail</title>
+    <title>Exampartus | Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="course-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <main class="main-content">
             <header class="main-header">
-                <a href="homepage.html" class="logo-container" aria-label="Go to homepage">
+                <div class="logo-container">
                     <div class="temp-logo">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                </a>
+                </div>
                 
-                <a href="homepage.html" class="brand" aria-label="Go to homepage">
+                <div class="brand">
                     <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
-                </a>
+                </div>
                 
                 <div class="profile-container">
                     <div class="action-buttons">
-                        <button class="back-button" id="backButton" aria-label="Go back">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
                         <div class="search-container">
                             <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
                                 <i class="fas fa-search"></i>
                             </button>
                             <div class="search-bar" id="searchBar">
-                                <input type="text" placeholder="Search for any lecture...">
+                                <input type="text" placeholder="Search for any course...">
                                 <button class="search-close" id="searchClose" aria-label="Close search">
                                     <i class="fas fa-times"></i>
                                 </button>
-                                <button aria-label="Search lectures">
+                                <button aria-label="Search courses">
                                     <i class="fas fa-search"></i>
                                 </button>
                             </div>
@@ -58,29 +54,8 @@
                 </div>
             </header>
 
-            <section class="course-header">
-                <div class="course-info">
-                    <h2 id="courseId">Course ID</h2>
-                    <h1 id="courseTitle">Course Title</h1>
-                </div>
-            </section>
-
-            <section class="lectures-container">
-                <div class="lectures-header">
-                    <h3 class="section-title">Lecture Recordings</h3>
-                    <div class="sorting-options">
-                        <label for="sortOption">Sort by:</label>
-                        <select id="sortOption" aria-label="Sort lectures">
-                            <option value="asc">Lecture Number (1 → 9)</option>
-                            <option value="desc">Lecture Number (9 → 1)</option>
-                            <option value="date-new">Date (Newest First)</option>
-                            <option value="date-old">Date (Oldest First)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="lectures-grid" id="lecturesGrid">
-                    <!-- Lecture tiles will be dynamically added here -->
-                </div>
+            <section class="courses-grid">
+                <!-- Course tiles will be dynamically added here -->
             </section>
             <footer class="main-footer">
                 <p>Made with <i class="fas fa-heart"></i> by Team Exampartus</p>
@@ -88,6 +63,6 @@
         </main>
     </div>
 
-    <script src="course-detail.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -3,66 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exampartus | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Exampartus | Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Load the Google Sign-In API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        /* Login Container */
+        .login-container {
+            width: 90%;
+            max-width: 400px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Logo and Brand Section */
+        .login-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .temp-logo {
+            width: 50px;
+            height: 50px;
+            background-color: #8e2465;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 3px 8px rgba(142, 36, 101, 0.3);
+            margin: 0 auto;
+        }
+
+        .brand {
+            margin-bottom: 30px;
+        }
+
+        .brand h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .brand-main {
+            color: #8e2465;
+        }
+
+        .brand-secondary {
+            color: #5f1b47;
+        }
+
+        /* Google Login Button */
+        .google-login {
+            width: 100%;
+            padding: 16px;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+        }
+
+        .google-login:hover {
+            background-color: #f8f9fa;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .google-login:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .google-icon {
+            margin-right: 12px;
+        }
+
+        /* Footer */
+        .form-footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .form-footer a {
+            color: #8e2465;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .form-footer a:hover {
+            color: #5f1b47;
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+            }
+            
+            .brand h1 {
+                font-size: 1.8rem;
+            }
+            
+            .temp-logo {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="app-container">
-        <main class="main-content">
-            <header class="main-header">
-                <div class="logo-container">
-                    <div class="temp-logo">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo-container">
+                <div class="temp-logo">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                
-                <div class="brand">
-                    <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
-                </div>
-                
-                <div class="profile-container">
-                    <div class="action-buttons">
-                        <div class="search-container">
-                            <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
-                                <i class="fas fa-search"></i>
-                            </button>
-                            <div class="search-bar" id="searchBar">
-                                <input type="text" placeholder="Search for any course...">
-                                <button class="search-close" id="searchClose" aria-label="Close search">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                                <button aria-label="Search courses">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <button class="profile-button" id="profileButton">
-                            <i class="fas fa-user-circle"></i>
-                        </button>
-                        <div class="profile-menu" id="profileMenu">
-                            <ul>
-                                <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
-                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-                                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            </div>
+            <div class="brand">
+                <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
+            </div>
+        </div>
 
-            <section class="courses-grid">
-                <!-- Course tiles will be dynamically added here -->
-            </section>
-            <footer class="main-footer">
-                <p>Made with <i class="fas fa-heart"></i> by Team Exampartus</p>
-            </footer>
-        </main>
+        <!-- Google Sign-In button -->
+        <button type="button" class="google-login" id="googleLoginBtn">
+            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+            </svg>
+            Sign in with Google
+        </button>
+
+        <!-- Container for the Google Sign-In API -->
+        <div id="g_id_onload"
+             data-client_id="113460596760-ltqv545uad4bbh8rd6h8ncs3qdnhav15.apps.googleusercontent.com"
+             data-callback="handleCredentialResponse"
+             data-auto_prompt="false">
+        </div>
+
+        <div class="form-footer">
+            <p>By signing in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+        </div>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Google login button handler
+            const googleLoginBtn = document.getElementById('googleLoginBtn');
+            googleLoginBtn.addEventListener('click', function() {
+                // Trigger the Google Sign-In popup
+                google.accounts.id.prompt();
+            });
+        });
+
+        // Callback function for handling the Google Sign-In response
+        function handleCredentialResponse(response) {
+            // The response contains a JWT ID token in response.credential
+            console.log("Encoded JWT ID token: " + response.credential);
+            
+            // Decode the JWT to get user information
+            const responsePayload = parseJwt(response.credential);
+            
+            console.log("ID: " + responsePayload.sub);
+            console.log("Name: " + responsePayload.name);
+            console.log("Email: " + responsePayload.email);
+            console.log("Picture: " + responsePayload.picture);
+            
+            // Store user information in localStorage or sessionStorage
+            localStorage.setItem('user', JSON.stringify({
+                id: responsePayload.sub,
+                name: responsePayload.name,
+                email: responsePayload.email,
+                picture: responsePayload.picture
+            }));
+            
+            // Redirect to index or dashboard page
+            window.location.href = 'homepage.html';
+        }
+        
+        // Helper function to parse JWT
+        function parseJwt(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+            
+            return JSON.parse(jsonPayload);
+        }
+        
+        // Check if user is already signed in
+        function checkLoginStatus() {
+            const user = localStorage.getItem('user');
+            if (user) {
+                // User is signed in, redirect to index page
+                window.location.href = 'homepage.html';
+            }
+        }
+        
+        // Check login status when page loads
+        checkLoginStatus();
+    </script>
 </body>
 </html>
