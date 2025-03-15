@@ -52,17 +52,33 @@
     text-decoration: none;
 }
 
+.brand h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brand-main {
+    color: #8e2465;
+}
+
+.brand-secondary {
+    color: #5f1b47;
+}
+
+.brand sup {
+    font-size: 0.7rem;
+    top: -1em;
+}
+
 .profile-container {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
-/* Back button positioning */
-.back-button {
-    margin-right: 10px;
-}
-
+/* Action buttons styling to match homepage */
 .action-buttons {
     display: flex;
     align-items: center;
@@ -89,6 +105,257 @@
 .back-button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(142, 36, 101, 0.4);
+}
+
+/* Temp Logo styling to match homepage */
+.temp-logo {
+    width: 50px;
+    height: 50px;
+    background-color: #8e2465;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 3px 8px rgba(142, 36, 101, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.temp-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(142, 36, 101, 0.4);
+}
+
+/* Profile Button and Menu styles to match homepage */
+.profile-wrapper {
+    position: relative;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #8e2465;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(142, 36, 101, 0.3);
+}
+
+/* Profile Menu */
+.profile-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 260px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    display: none;
+    overflow: hidden;
+    animation: fadeInDown 0.3s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-menu.active {
+    display: block;
+}
+
+.profile-header {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    color: white;
+}
+
+.profile-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.profile-menu ul {
+    list-style: none;
+    padding: 8px 0;
+}
+
+.profile-menu ul li {
+    padding: 0;
+}
+
+.profile-menu ul li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333333;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.profile-menu ul li a:hover {
+    background-color: #f5f5f5;
+}
+
+.profile-menu ul li.divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 8px 0;
+}
+
+.profile-menu ul li a.logout {
+    color: #dc3545;
+}
+
+.profile-menu ul li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Search bar styles to match homepage */
+.search-container {
+    position: relative;
+}
+
+.search-toggle {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(142, 36, 101, 0.3);
+}
+
+.search-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(142, 36, 101, 0.4);
+}
+
+.search-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 45px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-bar.active {
+    width: 300px;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 4px 20px rgba(142, 36, 101, 0.15);
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 0 20px;
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #aaaaaa;
+    font-weight: 300;
+}
+
+.search-bar button {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.search-bar button:hover i {
+    transform: scale(1.2);
+}
+
+/* Close button for search */
+.search-close {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+    display: none;
+}
+
+.search-bar.active .search-close {
+    display: block;
+}
+
+.search-close:hover {
+    color: #333;
 }
 
 /* Lectures Section */
