@@ -238,7 +238,10 @@
         
         // Check if user is already logged in
         auth.onAuthStateChanged((user) => {
-            if (user) {
+            // Check if we're in the logout process
+            const isLoggingOut = localStorage.getItem('logging_out') === 'true';
+            
+            if (user && !isLoggingOut) {
                 console.log("User already signed in:", user);
                 
                 // Store or update user info
@@ -251,6 +254,9 @@
                 
                 // Redirect to index page
                 window.location.href = 'homepage.html';
+            } else if (isLoggingOut) {
+                // Clear the logout flag
+                localStorage.removeItem('logging_out');
             }
         });
     </script>

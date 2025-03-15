@@ -221,6 +221,9 @@ function setupProfileMenu() {
             logoutButton.addEventListener('click', function(event) {
                 event.preventDefault();
                 
+                // Set logout flag
+                localStorage.setItem('logging_out', 'true');
+                
                 // Clear localStorage
                 localStorage.removeItem('user');
                 
@@ -233,6 +236,8 @@ function setupProfileMenu() {
                         })
                         .catch((error) => {
                             console.error('Error signing out:', error);
+                            // Clear logout flag in case of error
+                            localStorage.removeItem('logging_out');
                         });
                 } else {
                     // Redirect to login page
