@@ -493,3 +493,32 @@
 .profile-menu.active {
     display: block;
 }
+/* Add these styles to your CSS file */
+.brand-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    display: inline-block; /* This is important for clickability */
+}
+
+.brand-main {
+    color: #333333;
+}
+
+.brand-secondary {
+    color: #8e2465;
+}
+
+/* Add hover effect */
+.brand-link:hover .brand-text {
+    opacity: 0.9;
+}
