@@ -78,7 +78,7 @@ body {
     top: -1em;
 }
 
-/* Profile Button and Menu */
+/* Updated Profile Button and Menu Styles */
 .profile-container {
     flex: 1;
     display: flex;
@@ -92,39 +92,124 @@ body {
     gap: 15px;
 }
 
-.profile-button {
+/* Notification Button */
+.notification-button {
     background: none;
     border: none;
-    font-size: 28px;
-    color: #8e2465;
+    font-size: 22px;
+    color: #5f1b47;
     cursor: pointer;
-    padding: 5px;
+    padding: 8px;
     border-radius: 50%;
     transition: background-color 0.3s;
+    position: relative;
 }
 
-.profile-button:hover {
+.notification-button:hover {
     background-color: rgba(142, 36, 101, 0.1);
 }
 
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Profile Button */
+.profile-wrapper {
+    position: relative;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #8e2465;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(142, 36, 101, 0.3);
+}
+
+/* Profile Menu */
 .profile-menu {
     position: absolute;
     top: 55px;
     right: 0;
-    width: 200px;
+    width: 260px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     z-index: 100;
     display: none;
+    overflow: hidden;
+    animation: fadeInDown 0.3s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .profile-menu.active {
     display: block;
 }
 
+.profile-header {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #8e2465 0%, #5f1b47 100%);
+    color: white;
+}
+
+.profile-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
 .profile-menu ul {
     list-style: none;
+    padding: 8px 0;
 }
 
 .profile-menu ul li {
@@ -132,11 +217,13 @@ body {
 }
 
 .profile-menu ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 12px 16px;
     text-decoration: none;
     color: #333333;
     transition: background-color 0.3s;
+    font-size: 14px;
 }
 
 .profile-menu ul li a:hover {
@@ -155,8 +242,33 @@ body {
 
 .profile-menu ul li a i {
     margin-right: 10px;
-    width: 18px;
+    width: 20px;
     text-align: center;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .action-buttons {
+        gap: 10px;
+    }
+    
+    .profile-menu {
+        width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-menu {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15);
+    }
 }
 
 /* Expandable Search Bar */

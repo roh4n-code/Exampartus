@@ -21,6 +21,7 @@
                     <h1><span class="brand-main">EXAM</span><span class="brand-secondary">PARTUS</span></h1>
                 </div>
                 
+                <!-- Updated Profile Container -->
                 <div class="profile-container">
                     <div class="action-buttons">
                         <div class="search-container">
@@ -38,17 +39,33 @@
                             </div>
                         </div>
                         
-                        <button class="profile-button" id="profileButton">
-                            <i class="fas fa-user-circle"></i>
+                        <button class="notification-button" id="notificationButton" aria-label="Notifications">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
                         </button>
-                        <div class="profile-menu" id="profileMenu">
-                            <ul>
-                                <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
-                                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-                                <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                            </ul>
+                        
+                        <div class="profile-wrapper">
+                            <button class="profile-button" id="profileButton">
+                                <div class="profile-avatar">
+                                    <img id="profileAvatar" src="/api/placeholder/32/32" alt="Profile">
+                                </div>
+                            </button>
+                            <div class="profile-menu" id="profileMenu">
+                                <div class="profile-header">
+                                    <div class="profile-info">
+                                        <h4 id="profileName">User Name</h4>
+                                        <p id="profileEmail">user@example.com</p>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="fas fa-book"></i> My Courses</a></li>
+                                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                                    <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" class="logout" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
