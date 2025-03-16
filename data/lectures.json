@@ -110,7 +110,8 @@
       "date": "Feb 9, 2025",
       "dateObj": "2025-02-09",
       "instructor": "Dr. Tathagat Ray",
-      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-1"
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-1",
+      "section": "L1"
     },
     {
       "id": 2,
@@ -118,7 +119,8 @@
       "date": "Feb 13, 2025",
       "dateObj": "2025-02-13",
       "instructor": "Dr. Tathagat Ray",
-      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-2"
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-2",
+      "section": "L1"
     },
     {
       "id": 3,
@@ -126,7 +128,8 @@
       "date": "Feb 17, 2025",
       "dateObj": "2025-02-17",
       "instructor": "Dr. Tathagat Ray",
-      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-3"
+      "onedriveLink": "https://onedrive.live.com/lecture-cs-f303-3",
+      "section": "L2"
     }
   ],
   "CS F241": [
