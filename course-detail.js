@@ -7,7 +7,6 @@ function getUrlParameter(name) {
 }
 
 // Create lecture tile HTML
-// Create lecture tile HTML
 function createLectureTile(lecture) {
     return `
         <div class="lecture-tile" data-id="${lecture.id}" data-link="${lecture.onedriveLink || ''}">
@@ -16,6 +15,7 @@ function createLectureTile(lecture) {
             <div class="lecture-meta">
                 <div class="lecture-date">${lecture.date}</div>
                 <div class="lecture-instructor">${lecture.instructor}</div>
+                ${lecture.section ? `<div class="lecture-section">Section ${lecture.section}</div>` : ''}
             </div>
         </div>
     `;
@@ -79,6 +79,52 @@ async function fetchLectureData() {
     }
 }
 
+// Add this function to populate the section filter
+function populateSectionFilter(lectures) {
+    const sectionFilter = document.getElementById('sectionFilter');
+    
+    // If there's no section filter, don't proceed
+    if (!sectionFilter) return;
+    
+    // Get unique sections from lectures
+    const sections = [...new Set(lectures.map(lecture => lecture.section).filter(Boolean))];
+    
+    // If there's only one or no sections, hide the filter
+    if (sections.length <= 1) {
+        sectionFilter.parentElement.style.display = 'none';
+        return;
+    }
+    
+    // Clear existing options except "All Sections"
+    while (sectionFilter.options.length > 1) {
+        sectionFilter.remove(1);
+    }
+    
+    // Add section options
+    sections.forEach(section => {
+        const option = document.createElement('option');
+        option.value = section;
+        option.textContent = `Section ${section}`;
+        sectionFilter.appendChild(option);
+    });
+    
+    // Show the filter
+    sectionFilter.parentElement.style.display = 'block';
+    
+    // Add event listener
+    sectionFilter.addEventListener('change', function() {
+        const selectedSection = this.value;
+        const sortOption = document.getElementById('sortOption')?.value || 'asc';
+        
+        if (selectedSection === 'all') {
+            renderLectures(lectures, sortOption);
+        } else {
+            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+            renderLectures(filteredLectures, sortOption);
+        }
+    });
+}
+
 // Initialize course detail page
 async function initializeCourseDetailPage() {
     // Get course ID from URL parameter
@@ -102,6 +148,9 @@ async function initializeCourseDetailPage() {
             const lectures = lecturesData[courseId] || [];
             
             if (lectures.length > 0) {
+                // Populate section filter
+                populateSectionFilter(lectures);
+                
                 // Initial sort (default to ascending)
                 renderLectures(lectures, 'asc');
                 
@@ -109,7 +158,14 @@ async function initializeCourseDetailPage() {
                 const sortOption = document.getElementById('sortOption');
                 if (sortOption) {
                     sortOption.addEventListener('change', function() {
-                        renderLectures(lectures, this.value);
+                        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
+                        
+                        if (selectedSection === 'all') {
+                            renderLectures(lectures, this.value);
+                        } else {
+                            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+                            renderLectures(filteredLectures, this.value);
+                        }
                     });
                 }
             } else {
@@ -197,28 +253,7 @@ function setupExpandableSearch() {
                 return;
             }
             
-            try {
-                const courseId = getUrlParameter('courseId');
-                const lecturesData = await fetchLectureData();
-                const lectures = lecturesData[courseId] || [];
-                const lecturesGrid = document.getElementById('lecturesGrid');
-                const sortOption = document.getElementById('sortOption')?.value || 'asc';
-                
-                const filteredLectures = lectures.filter(lecture => 
-                    lecture.title.toLowerCase().includes(searchTerm) || 
-                    lecture.instructor.toLowerCase().includes(searchTerm)
-                );
-                
-                const sortedFilteredLectures = sortLectures(filteredLectures, sortOption);
-                
-                lecturesGrid.innerHTML = filteredLectures.length > 0 
-                    ? sortedFilteredLectures.map(createLectureTile).join('') 
-                    : '<div class="no-lectures">No lectures found matching your search.</div>';
-                
-                attachLectureClickListeners();
-            } catch (error) {
-                console.error('Error during search:', error);
-            }
+            performSearch();
         });
         
         // Handle search button click
@@ -251,11 +286,17 @@ async function performSearch() {
         const lectures = lecturesData[courseId] || [];
         const lecturesGrid = document.getElementById('lecturesGrid');
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
+        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
         
-        const filteredLectures = lectures.filter(lecture => 
+        let filteredLectures = lectures.filter(lecture => 
             lecture.title.toLowerCase().includes(searchTerm) || 
             lecture.instructor.toLowerCase().includes(searchTerm)
         );
+        
+        // Apply section filter if a specific section is selected
+        if (selectedSection !== 'all') {
+            filteredLectures = filteredLectures.filter(lecture => lecture.section === selectedSection);
+        }
         
         const sortedFilteredLectures = sortLectures(filteredLectures, sortOption);
         
@@ -283,14 +324,19 @@ async function resetSearchResults() {
         const lecturesData = await fetchLectureData();
         const lectures = lecturesData[courseId] || [];
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
+        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
         
-        renderLectures(lectures, sortOption);
+        if (selectedSection === 'all') {
+            renderLectures(lectures, sortOption);
+        } else {
+            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+            renderLectures(filteredLectures, sortOption);
+        }
     } catch (error) {
         console.error('Error resetting search results:', error);
     }
 }
 
-// Modify the attachLectureClickListeners function
 // Attach event listeners to lecture tiles
 function attachLectureClickListeners() {
     document.querySelectorAll('.lecture-tile').forEach(tile => {
@@ -313,8 +359,6 @@ function attachLectureClickListeners() {
         });
     });
 }
-
-// Add this updated function to course-detail.js
 
 // Profile Menu Functionality
 function setupProfileMenu() {

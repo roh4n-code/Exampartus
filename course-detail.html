@@ -82,13 +82,22 @@
                 <div class="lectures-header">
                     <h3 class="section-title">Lecture Recordings</h3>
                     <div class="sorting-options">
-                        <label for="sortOption">Sort by:</label>
-                        <select id="sortOption" aria-label="Sort lectures">
-                            <option value="asc">Lecture Number (1 → 9)</option>
-                            <option value="desc">Lecture Number (9 → 1)</option>
-                            <option value="date-new">Date (Newest First)</option>
-                            <option value="date-old">Date (Oldest First)</option>
-                        </select>
+                        <div class="filter-group">
+                            <label for="sectionFilter">Section:</label>
+                            <select id="sectionFilter" aria-label="Filter by section">
+                                <option value="all">All Sections</option>
+                                <!-- Section options will be dynamically added here -->
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sortOption">Sort by:</label>
+                            <select id="sortOption" aria-label="Sort lectures">
+                                <option value="asc">Lecture Number (1 → 9)</option>
+                                <option value="desc">Lecture Number (9 → 1)</option>
+                                <option value="date-new">Date (Newest First)</option>
+                                <option value="date-old">Date (Oldest First)</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="lectures-grid" id="lecturesGrid">
