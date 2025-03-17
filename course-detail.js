@@ -96,8 +96,8 @@ function populateSectionFilter(lectures) {
     }
     
     // Clear existing options except "All Sections"
-    while (sectionFilter.options.length > 0) {
-        sectionFilter.remove(0);
+    while (sectionFilter.options.length > 1) {
+        sectionFilter.remove(1);
     }
     
     // Add section options
@@ -116,8 +116,12 @@ function populateSectionFilter(lectures) {
         const selectedSection = this.value;
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
         
-        const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
-        renderLectures(filteredLectures, sortOption);
+        if (selectedSection === 'all') {
+            renderLectures(lectures, sortOption);
+        } else {
+            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+            renderLectures(filteredLectures, sortOption);
+        }
     });
 }
 
@@ -148,18 +152,20 @@ async function initializeCourseDetailPage() {
                 populateSectionFilter(lectures);
                 
                 // Initial sort (default to ascending)
-                // Get first section and use it as default selection
-                const firstSection = document.getElementById('sectionFilter').value;
-                const filteredLectures = lectures.filter(lecture => lecture.section === firstSection);
-                renderLectures(filteredLectures, 'asc');
+                renderLectures(lectures, 'asc');
                 
                 // Set up sorting functionality
                 const sortOption = document.getElementById('sortOption');
                 if (sortOption) {
                     sortOption.addEventListener('change', function() {
-                        const selectedSection = document.getElementById('sectionFilter')?.value;
-                        const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
-                        renderLectures(filteredLectures, this.value);
+                        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
+                        
+                        if (selectedSection === 'all') {
+                            renderLectures(lectures, this.value);
+                        } else {
+                            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+                            renderLectures(filteredLectures, this.value);
+                        }
                     });
                 }
             } else {
@@ -280,15 +286,17 @@ async function performSearch() {
         const lectures = lecturesData[courseId] || [];
         const lecturesGrid = document.getElementById('lecturesGrid');
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
-        const selectedSection = document.getElementById('sectionFilter')?.value;
+        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
         
         let filteredLectures = lectures.filter(lecture => 
             lecture.title.toLowerCase().includes(searchTerm) || 
             lecture.instructor.toLowerCase().includes(searchTerm)
         );
         
-        // Always apply section filter
-        filteredLectures = filteredLectures.filter(lecture => lecture.section === selectedSection);
+        // Apply section filter if a specific section is selected
+        if (selectedSection !== 'all') {
+            filteredLectures = filteredLectures.filter(lecture => lecture.section === selectedSection);
+        }
         
         const sortedFilteredLectures = sortLectures(filteredLectures, sortOption);
         
@@ -316,10 +324,14 @@ async function resetSearchResults() {
         const lecturesData = await fetchLectureData();
         const lectures = lecturesData[courseId] || [];
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
-        const selectedSection = document.getElementById('sectionFilter')?.value;
+        const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
         
-        const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
-        renderLectures(filteredLectures, sortOption);
+        if (selectedSection === 'all') {
+            renderLectures(lectures, sortOption);
+        } else {
+            const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
+            renderLectures(filteredLectures, sortOption);
+        }
     } catch (error) {
         console.error('Error resetting search results:', error);
     }
