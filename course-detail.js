@@ -112,17 +112,19 @@ function populateSectionFilter(lectures) {
     sectionFilter.parentElement.style.display = 'block';
     
     // Add event listener
+    // Add event listener
     sectionFilter.addEventListener('change', function() {
         const selectedSection = this.value;
         const sortOption = document.getElementById('sortOption')?.value || 'asc';
         
+        // Always show all lectures (of the selected section) when filters change
         if (selectedSection === 'all') {
             renderLectures(lectures, sortOption);
         } else {
             const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
             renderLectures(filteredLectures, sortOption);
         }
-    });
+});
 }
 
 // Initialize course detail page
@@ -151,33 +153,23 @@ async function initializeCourseDetailPage() {
                 // Populate section filter
                 populateSectionFilter(lectures);
                 
-                // // Initial sort (default to ascending)
-                // renderLectures(lectures, 'asc');
+                // Filter to only show Lecture 1 by default
+                const lecture1 = lectures.filter(lecture => lecture.id === 1 || lecture.id === "1");
                 
-                // // Set up sorting functionality
-                // const sortOption = document.getElementById('sortOption');
-                // if (sortOption) {
-                //     sortOption.addEventListener('change', function() {
-                //         const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
-                        
-                //         if (selectedSection === 'all') {
-                //             renderLectures(lectures, this.value);
-                //         } else {
-                //             const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
-                //             renderLectures(filteredLectures, this.value);
-                //         }
-                //     });
-                // }
-                // Initial sort (default to ascending)
-                renderLectures(lectures, 'asc');
-
+                if (lecture1.length > 0) {
+                    // If Lecture 1 exists, show only it
+                    renderLectures(lecture1, 'asc');
+                } else {
+                    // If Lecture 1 doesn't exist, show all lectures sorted
+                    renderLectures(lectures, 'asc');
+                }
+                
                 // Set up sorting functionality
                 const sortOption = document.getElementById('sortOption');
                 if (sortOption) {
-                    // Explicitly set the dropdown to show "Lecture Number (1 → 9)"
                     sortOption.value = 'asc';
-                    
                     sortOption.addEventListener('change', function() {
+                        // When user changes sort, show all lectures with that sort
                         const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
                         
                         if (selectedSection === 'all') {
