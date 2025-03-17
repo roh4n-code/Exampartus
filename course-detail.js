@@ -151,32 +151,12 @@ async function initializeCourseDetailPage() {
                 // Populate section filter
                 populateSectionFilter(lectures);
                 
-                // // Initial sort (default to ascending)
-                // renderLectures(lectures, 'asc');
-                
-                // // Set up sorting functionality
-                // const sortOption = document.getElementById('sortOption');
-                // if (sortOption) {
-                //     sortOption.addEventListener('change', function() {
-                //         const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
-                        
-                //         if (selectedSection === 'all') {
-                //             renderLectures(lectures, this.value);
-                //         } else {
-                //             const filteredLectures = lectures.filter(lecture => lecture.section === selectedSection);
-                //             renderLectures(filteredLectures, this.value);
-                //         }
-                //     });
-                // }
                 // Initial sort (default to ascending)
                 renderLectures(lectures, 'asc');
-
+                
                 // Set up sorting functionality
                 const sortOption = document.getElementById('sortOption');
                 if (sortOption) {
-                    // Explicitly set the dropdown to show "Lecture Number (1 → 9)"
-                    sortOption.value = 'asc';
-                    
                     sortOption.addEventListener('change', function() {
                         const selectedSection = document.getElementById('sectionFilter')?.value || 'all';
                         
