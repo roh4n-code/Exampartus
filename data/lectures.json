@@ -317,5 +317,207 @@
       "instructor": "Chetan Kumar",
       "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Efvszih3HBBJm_O9k97VqNwByQcfWNuJJ66ExWxbRCMn3Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=siidRT"
     }
-  ]
+  ],
+  "CS F212": [
+    {
+      "id": 1,
+      "title": "Handout Discussion",
+      "date": "Jan 7, 2025",
+      "dateObj": "2025-01-07",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EdsLYbTqBD5JsiuAgcSjQs8B5aGR6f6720bxZb5EkBfBQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OENMPl"
+    },
+    {
+      "id": 2,
+      "title": "Why Use Databases",
+      "date": "Jan 8, 2025",
+      "dateObj": "2025-01-08",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EWKA0gh19ARJm7FfZ5poV54BxIAAjRl9xFQSoLIIk8K6Ew?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nzTd43"
+    },
+    {
+      "id": 3,
+      "title": "What Is ER And Representational Models",
+      "date": "Jan 9, 2025",
+      "dateObj": "2025-01-09",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EYO5fqVdlGlHuFtZn8I1hU8ByHOlyBuctCOJxZhvcoGTeQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ojemzE"
+    },
+    {
+      "id": 4,
+      "title": "Database Schema And Structure",
+      "date": "Jan 15, 2025",
+      "dateObj": "2025-01-15",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQZDxtM_8QxFhMSF2gsSNxIBTux2uc6hnHsu4Vb42k7ZnQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C3L4Wa"
+    },
+    {
+      "id": 5,
+      "title": "Tuples, Schemas And...",
+      "date": "Jan 16, 2025",
+      "dateObj": "2025-01-16",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EYGQZVuQlllHt9JpL_gf6GwBTE29x0G0ahz2QX8aarlSsA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HQtUfn"
+    },
+    {
+      "id": 6,
+      "title": "Relational Constraints",
+      "date": "Jan 21, 2025",
+      "dateObj": "2025-01-21",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EVn6v9TkU9lFhgmMqUJ17vkB4dlORBSAoIimY8IYbRyirw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vvgzhk"
+    },
+    {
+      "id": 7,
+      "title": "Intro To SQL",
+      "date": "Jan 22, 2025",
+      "dateObj": "2025-01-22",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ER6Y4159gFFApEesVR2jL3kBQ4J5EWYgwu1-OBosq7MLug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZSI6Ht"
+    },
+    {
+      "id": 8,
+      "title": "No Topic Entered",
+      "date": "Jan 23, 2025",
+      "dateObj": "2025-01-23",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EbtjY0CCVflJiTkpdpJg91IBtfM1n72m31vdltl09IC-Lg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=TJVsCZ"
+    },
+    {
+      "id": 9,
+      "title": "No Topic Entered",
+      "date": "Jan 28, 2025",
+      "dateObj": "2025-01-28",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Ed7t3q39xG5Kn8Szv3VCJU4BAJGrXGY5nwCYU4C1Ja7qdw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=W58kwa"
+    },
+    {
+      "id": 10,
+      "title": "No Topic Entered",
+      "date": "Jan 29, 2025",
+      "dateObj": "2025-01-29",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ERFebL1p8hdLlTgGYSyrwNIB30XcW0rneH8cN6CtCSRdZw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=U6tXLs"
+    },
+    {
+      "id": 11,
+      "title": "No Topic Entered",
+      "date": "Jan 30, 2025",
+      "dateObj": "2025-01-30",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EXJyR1jfuFtBk5LDzxIxjn8BeFLJVxzcfJCnQiEnCBVZAw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eJGykm"
+    },
+    {
+      "id": 12,
+      "title": "No Topic Entered",
+      "date": "Feb 4, 2025",
+      "dateObj": "2025-02-04",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Ea_uqmf-a41IrDRpZX2fz-EB3-XRWZpA0z3vYmuSJCP6qg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=T1Dpf7"
+    },
+    {
+    "id": 13,
+    "title": "Intro To Rel Algebra",
+    "date": "Feb 5, 2025",
+    "dateObj": "2025-02-05",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQrM1qe4bipNrao1T5g1lrgBzUFZhNCwZCAXuNjoz8r64Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mZ9ro2"
+    },
+    {
+    "id": 14,
+    "title": "No Topic Entered",
+    "date": "Feb 6, 2025",
+    "dateObj": "2025-02-06",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EU8IGATDhFpKka7cvgZR-mQBovRQcg7k_XGo0yXfGKSfag?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PIvTgc"
+    },
+    {
+    "id": 15,
+    "title": "Group By In RA",
+    "date": "Feb 11, 2025",
+    "dateObj": "2025-02-11",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Eazefo3_YL9DufPD7f55FO8BJXXsAq0rPUIE9pIiJWxtkg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KgIz6a"
+    },
+    {
+    "id": 16,
+    "title": "No Topic Entered",
+    "date": "Feb 12, 2025",
+    "dateObj": "2025-02-12",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ERnLl5t5ACtPizoReBs-dCIBM1WisI-5K7WZ-1JbnnH8rg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8BA8tY"
+    },
+    {
+    "id": 17,
+    "title": "ER Modelling",
+    "date": "Feb 13, 2025",
+    "dateObj": "2025-02-13",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EX_QtlTmtqVGvPT_ZVdgCosB5TVqPugEX5oiXuSOElpG0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NvMA8A"
+    },
+    {
+    "id": 18,
+    "title": "No Topic Entered",
+    "date": "Feb 18, 2025",
+    "dateObj": "2025-02-18",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUBeiaUyu1RPs0ePJ34e6nIBNqWg3Km3q9u4A4CCrv6d8A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AD6RvU"
+    },
+    {
+    "id": 19,
+    "title": "No Topic Entered",
+    "date": "Feb 19, 2025",
+    "dateObj": "2025-02-19",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Edc_f6Mf9jRAuE-MUYH-ZBoBciCK83iETouFHfzphmBD2w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=uijg4r"
+    },
+    {
+    "id": 20,
+    "title": "No Topic Entered",
+    "date": "Feb 20, 2025",
+    "dateObj": "2025-02-20",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EXe2Li4CJ1xKpVEZBIlsTUsBzFNEsP2tCyiTp32IEVm38w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=JAyBYH"
+    },
+    {
+    "id": 21,
+    "title": "No Topic Entered",
+    "date": "Feb 25, 2025",
+    "dateObj": "2025-02-25",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EbsGDF9LOYdLmSXoXE_nPykBbLplleRAPFc0QZ3f5rSIyQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wa9zKz"
+    },
+    {
+    "id": 22,
+    "title": "No Topic Entered",
+    "date": "Feb 27, 2025",
+    "dateObj": "2025-02-27",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EfM9XfAOxsxCkYTKHe0I-QQBzdvQkeSe9d6F4xfyKF-2Ag?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FPg9Iq"
+    },
+    {
+    "id": 23,
+    "title": "No Topic Entered",
+    "date": "Mar 11, 2025",
+    "dateObj": "2025-03-11",
+    "instructor": "R Gururaj",
+    "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ETwp98nrsrlFlqoYHDFDoSQBNAZS4j_YSt40tr6wzj9GuA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cQtEDK"
+    },
+      {
+      "id": 24,
+      "title": "No Topic Entered",
+      "date": "Mar 12, 2025",
+      "dateObj": "2025-03-12",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EZgJn_8rUWlOiV8U7QTRhugBnFC0_8Sjc3whHyUwAYF5DA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dxWlfs"
+      },
+    {
+      "id": 25,
+      "title": "No Topic Entered",
+      "date": "Mar 13, 2025",
+      "dateObj": "2025-03-13",
+      "instructor": "R Gururaj",
+      "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EfifizdScDJGn6D8ekpmBDsBj-o6rsK0PuKuFoLtUE9Aww?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9W5t9D"
+      }
+]
 }
