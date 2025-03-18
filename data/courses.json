@@ -1,30 +1,42 @@
 [
-    {
-      "id": "CS F241",
-      "title": "MICRO-PROCESSORS AND INTERFACING"
-    },
-    {
-      "id": "CS F212",
-      "title": "DATA BASE SYSTEMS"
-    },
-    {
-      "id": "CS F363",
-      "title": "COMPILER CONSTRUCTION"
-    },
-    {
-      "id": "CS F364",
-      "title": "DESIGN & ANAL OF ALGO"
-    },
-    {
-      "id": "BITS F464",
-      "title": "MACHINE LEARNING"
-    },
-    {
-      "id": "ECON F354",
-      "title": "DERIVATIVES & RISK MGMT"
-    },
-    {
-      "id": "CS F303",
-      "title": "COMPUTER NETWORKS"
-    }
-  ]
+  {
+    "id": "CS F211",
+    "title": "DATA STRUCTURE & ALGO"
+  },
+  {
+    "id": "CS F212",
+  "title": "DATA BASE SYSTEMS"
+  },
+  {
+    "id": "CS F241",
+    "title": "MICRO-PROCESSORS AND INTERFACING"
+  },
+  {
+   "id": "EEE F242",
+   "title": "CONTROL SYSTEMS"
+  },
+  {
+    "id": "ECE F243",
+    "title": "SIGNALS AND SYSTEMS"
+  },
+  {
+    "id": "ECE F244",
+    "title": "MICROELECTRONIC CIRCUITS"
+  },
+  {
+    "id": "CS F303",
+    "title": "COMPUTER NETWORKS"
+  },
+  {
+    "id": "CS F363",
+    "title": "COMPILER CONSTRUCTION"
+  },
+  {
+    "id": "CS F364",
+    "title": "DESIGN & ANAL OF ALGO"
+  },
+  {
+    "id": "ECE F343",
+    "title": "COMMUNICATION NETWORK"
+  }
+]
