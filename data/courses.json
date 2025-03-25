@@ -46,5 +46,17 @@
   {
     "id": "EEE F341",
     "title": "ANALOG ELECTRONICS"
+  },
+  {
+    "id": "BITS F232",
+    "title": "FOUNDATIONS OF DATA STRUCTURES AND ALGORITHMS"
+  },
+  {
+    "id": "BIO F111",
+    "title": "GENERAL BIOLOGY"
+  },
+  {
+    "id": "CS F111",
+    "title": "COMPUTER PROGRAMMING"
   }
 ]
