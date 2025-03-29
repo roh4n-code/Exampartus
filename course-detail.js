@@ -140,7 +140,7 @@ async function initializeCourseDetailPage() {
         
         if (course) {
             // Update page title and header
-            document.title = `ExamPartus | ${course.id} - ${course.title}`;
+            document.title = `Exampartus | ${course.id} - ${course.title}`;
             document.getElementById('courseId').textContent = course.id;
             document.getElementById('courseTitle').textContent = course.title;
             
