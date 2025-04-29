@@ -559,7 +559,7 @@
         "id": 4,
         "title": "8086 Internal Diagram, BIU and EU, 8086 Registers (Including Flag Reg)",
         "date": "01-Feb-25",
-        "dateObj": "01/02/25",
+        "dateObj": "02/01/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Ef8dWQZwQodLrrVcsNsgx2cBVnuKWiRW6wyb5Gh-Pne5fg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=b7hzHF"
       },
@@ -575,7 +575,7 @@
         "id": 6,
         "title": "Memory Banking in 8086",
         "date": "03-Feb-25",
-        "dateObj": "03/02/25",
+        "dateObj": "02/03/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EeWb3Ji04tFMnGj1SpgH0ukBF09wfK7XYuGTdu3kWvrW_w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zzLXp1"
       },
@@ -583,7 +583,7 @@
         "id": 7,
         "title": "Segmentation And Two Examples",
         "date": "04-Feb-25",
-        "dateObj": "04/02/25",
+        "dateObj": "02/04/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EcCmpzjcRmJIoLUikg6M9tEBvq1gb_0d3cb-KGhSURrolg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YEYLFY"
       },
@@ -591,7 +591,7 @@
         "id": 8,
         "title": "Data Transfer Instructions, ALP Example",
         "date": "05-Feb-25",
-        "dateObj": "05/02/25",
+        "dateObj": "02/05/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUzRiBXynO1Dp3fdl142bGQBgO_s9hc_Yy1fD9DcdIDNVQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hvBP42"
       },
@@ -599,7 +599,7 @@
         "id": 9,
         "title": "8086 Instruction Encoding Format: MOV",
         "date": "06-Feb-25",
-        "dateObj": "06/02/25",
+        "dateObj": "02/06/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EQO-Rhj9TclEpqoA-YFQUPgB6_W7EdWftXb42JSgr7jTPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ymKfET"
       },
@@ -607,7 +607,7 @@
         "id": 10,
         "title": "Arithmetic Instructions, ALP Examples",
         "date": "07-Feb-25",
-        "dateObj": "07/02/25",
+        "dateObj": "02/07/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EaJGhVao-l5Kkl3GHU0CzaIBt4oTj6EkYsvFR9rrw312PA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eRQfct"
       },
@@ -615,7 +615,7 @@
         "id": 11,
         "title": "Logical Instructions",
         "date": "08-Feb-25",
-        "dateObj": "08/02/25",
+        "dateObj": "02/08/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EZuKr9zbrGpNqtY-J6IGjSgBn5oah6f2gbHVUN6q8u0ZIw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=s2lVX8"
       },
@@ -623,7 +623,7 @@
         "id": 12,
         "title": "Branch Instructions",
         "date": "09-Feb-25",
-        "dateObj": "09/02/25",
+        "dateObj": "02/09/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EfQbNgwe_7ZGqwgy9TrA8ZABaNMjCpuCDs9fDWwNo-n3Sw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8m8NmI"
       },
@@ -631,7 +631,7 @@
         "id": 13,
         "title": "Branch Instructions Part 2",
         "date": "10-Feb-25",
-        "dateObj": "10/02/25",
+        "dateObj": "02/10/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EcTRyhU7HUNItxm9DSCW5T8BuFMqO4bHYauel1Q1j_Orsw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PfbpBH"
       },
@@ -639,7 +639,7 @@
         "id": 14,
         "title": "String Instructions",
         "date": "11-Feb-25",
-        "dateObj": "11/02/25",
+        "dateObj": "02/11/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ES6J7mpABAFDqECocIo4RDgBMkkIJz3d2FiqNz2O-u79bQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ICiAUT"
       },
@@ -647,7 +647,7 @@
         "id": 15,
         "title": "String Instructions (Lods, Stos, Cmps)",
         "date": "12-Feb-25",
-        "dateObj": "12/02/25",
+        "dateObj": "02/12/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EXK_p2wL0qRPtZUlyi41TB8BqBBA3Cu5AtYZtvAfCZ1mrw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bWXvOv"
       },
@@ -703,7 +703,7 @@
         "id": 22,
         "title": "No Topic Entered",
         "date": "10-Mar-25",
-        "dateObj": "10/03/25",
+        "dateObj": "03/10/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EUg3uUx6vzJImNO-hqFNm9QB20TOJ1YV4ASXTCwUe1qcUA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9z7aZU"
       },
@@ -711,7 +711,7 @@
         "id": 23,
         "title": "No Topic Entered",
         "date": "10-Mar-25",
-        "dateObj": "10/03/25",
+        "dateObj": "03/10/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/Efvszih3HBBJm_O9k97VqNwByQcfWNuJJ66ExWxbRCMn3Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=siidRT"
       },
@@ -719,7 +719,7 @@
         "id": 24,
         "title": "No Topic Entered",
         "date": "12-Mar-25",
-        "dateObj": "12/03/25",
+        "dateObj": "03/12/25",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EThY3FkmHMZGkmvE05Rg3mMBwG22mViJkDa9aupGixg1kg?e=x6TNaw"
       },
@@ -778,6 +778,48 @@
         "title": "No Topic Entered",
         "instructor": "Chetan Kumar",
         "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EU23_w_9y1JLkXowNy9MYu4BhlI4g1J7V4l801PXQtd-pQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Edd6JL"
+      },
+      {
+        "id": 34,
+        "title": "Mode 1",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ERVZudbl5whGgQoVDavC_vsBFMBZKlgn31rQOZJ0l_t3zA?e=Gh7t9G"
+      },
+      {
+        "id": 35,
+        "title": "Mode 2",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ETok9w_KepBDr0OT3HgM7nwBz038usBMavAP4GN2lpj8vg?e=gedcAY"
+      },
+      {
+        "id": 36,
+        "title": "No topic entered",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EbNCU4HIS3BAvLNxAUp9Cq0BwStYY87dlIBXddUA0CMzxg?e=e8AA9f"
+      },
+      {
+        "id": 37,
+        "title": "No topic entered",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/ETw3-xQs0aRMt3aP7ndvmXIBquM2AM_KNKyrfJzZ7780Pw?e=iGhtaU"
+      },
+      {
+        "id": 38,
+        "title": "No topic entered",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EaYNdWp4D1BPh3JnSLbqogYBBTSCUmTMiZDvthA07xiMMw?e=3YDH5x"
+      },
+      {
+        "id": 39,
+        "title": "No topic entered",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EYGg4GGhJwVLmMjDOqx-17UBW0V1GWyecOVAiyUizxdh0A?e=yT0vsM"
+      },
+      {
+        "id": 40,
+        "title": "No class",
+        "instructor": "Chetan Kumar",
+        "onedriveLink": "https://vspkms110405-my.sharepoint.com/:v:/g/personal/rohan_vspkms110405_onmicrosoft_com/EbvovsK_-gZBuCu_xJqjRX8Bs6GkNSbSeR7dQJRi_8o7lg?e=zipouv"
       }
     ]
 ,
